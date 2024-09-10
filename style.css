@@ -1,23 +1,24 @@
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
 /* Container */
 .container-fluid {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 /* Input Form Styles */
 #healthForm {
     padding: 20px;
-    /* Add padding to the input form */
     background-color: #f8f9fa;
-    /* Background color similar to today's summary */
     border-radius: 0.5rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    /* Add shadow similar to today's summary */
+    margin-bottom: 20px;
 }
 
 /* Today's Summary Section */
@@ -25,6 +26,8 @@ body {
     background-color: #f8f9fa;
     border-radius: 0.5rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
 /* Last Updated Section */
@@ -33,7 +36,7 @@ body {
     border-radius: 0.5rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    /* Add padding to the last updated section */
+    margin-top: 20px;
 }
 
 /* Doughnut Charts Section */
@@ -51,4 +54,73 @@ body {
 #waterChart,
 #sleepChart {
     margin-top: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+
+    /* For phones and smaller devices */
+    .row {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    #healthForm,
+    #results,
+    #lastUpdated {
+        margin-bottom: 20px;
+    }
+
+    .canvas-container {
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 769px) {
+
+    /* For laptops and larger screens */
+    .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    /* Make charts and forms more compact on larger screens */
+    .col-md-6,
+    .col-lg-4 {
+        margin-bottom: 30px;
+    }
+}
+
+/* Custom for Doughnut and Line Charts */
+.canvas-container canvas {
+    max-width: 100%;
+    height: auto;
+}
+
+.text-center h1 {
+    font-size: 2rem;
+}
+
+/* Text Resizing for Phones */
+@media (max-width: 576px) {
+    h1.display-5 {
+        font-size: 1.8rem;
+    }
+
+    .lead {
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
 }

@@ -211,6 +211,15 @@ document.getElementById('healthForm').addEventListener('submit', function (event
     const lastUpdated = document.getElementById('lastUpdated');
     lastUpdated.querySelector('p').textContent = `Last updated: ${now.toLocaleDateString()} ${now.toLocaleTimeString()}`;
 
+    // Update Today's Summary section
+    const results = document.getElementById('results');
+    results.innerHTML = `
+        <h4>Today's Summary</h4>
+        <p>Steps: ${steps}</p>
+        <p>Water Intake: ${water} L</p>
+        <p>Sleep: ${sleep} hours</p>
+    `;
+
     // Reset form
     document.getElementById('healthForm').reset();
 });
