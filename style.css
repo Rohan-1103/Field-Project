@@ -1,0 +1,54 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Container */
+.container-fluid {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Input Form Styles */
+#healthForm {
+    padding: 20px;
+    /* Add padding to the input form */
+    background-color: #f8f9fa;
+    /* Background color similar to today's summary */
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Add shadow similar to today's summary */
+}
+
+/* Today's Summary Section */
+#results {
+    background-color: #f8f9fa;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Last Updated Section */
+#lastUpdated {
+    background-color: #f8f9fa;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    /* Add padding to the last updated section */
+}
+
+/* Doughnut Charts Section */
+#results h4,
+#lastUpdated h4 {
+    margin-bottom: 10px;
+}
+
+.canvas-container {
+    margin-top: 20px;
+}
+
+/* Weekly Charts Section */
+#stepsChart,
+#waterChart,
+#sleepChart {
+    margin-top: 20px;
+}
